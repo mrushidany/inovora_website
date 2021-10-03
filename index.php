@@ -31,7 +31,7 @@
 					<div class="coming-soon-text">
 						<h4>We are</h4>
 						<h1 class="type-animate">
-							<a href="" class="typewrite" data-period="2000" data-type='[ "COMING SOON", "Based in Dar es Salaam, Tanzania" ]'>
+							<a href="" class="typewrite" data-period="2000" data-type='[ "COMING SOON", "Based in Dar es Salaam, Tanzania." ]'>
 							<span class="wrap"></span>
 							</a>
 						</h1>
