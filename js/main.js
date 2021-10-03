@@ -12,7 +12,7 @@ document.addEventListener("touchstart", function() {},false);
 |--------------------------------------------------------------------------
 */
 var today = new Date();
-var nextweek = new Date(today.getFullYear(), today.getMonth(), today.getDate()+7);
+var nextweek = new Date(today.getFullYear(), today.getMonth(), today.getDate()+14);
 	$('#defaultCountdown').countdown({until: nextweek});
 	$('#year').text(today.getFullYear());
 
@@ -26,56 +26,6 @@ var nextweek = new Date(today.getFullYear(), today.getMonth(), today.getDate()+7
 		url: 'https://mgscoder.us2.list-manage.com/subscribe/post?u=57eb49699512ae629a24aca54&id=bfa98bd8f0'
 	});
 
-/*
-|--------------------------------------------------------------------------
-	Contact Form
-|--------------------------------------------------------------------------
-*/	
-	$("#contactForm").validator().on("submit", function (event) {
-		if (event.isDefaultPrevented()) {
-			//handle the invalid form...
-			formError();
-			submitMSG(false, "Please fill in the form properly!");
-		} else {
-			//everything looks good!
-			event.preventDefault();
-			submitForm();
-		}
-	});
-	
-	function submitForm(){
-		$.ajax({
-			type: "POST",
-			url: "contact-process.php",
-			data: $( "#contactForm" ).serialize(),
-			success : function(text){
-				if (text === "success"){
-					formSuccess();
-				} else {
-					formError();
-					submitMSG(false,text);
-				}
-			}
-		});
-	}
-	
-	function formSuccess(){
-		$("#contactForm")[0].reset();
-		submitMSG(true, "Your Message Submitted Successfully!")
-	}
-	
-	function formError(){
-		$(".help-block.with-errors").removeClass('hidden');
-	}
-	
-	function submitMSG(valid, msg){
-		if(valid){
-			var msgClasses = "h3 text-center text-success";
-		} else {
-			var msgClasses = "h3 text-center text-danger";
-		}
-		$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
-	}
 
 })(jQuery);
 
@@ -141,43 +91,6 @@ var nextweek = new Date(today.getFullYear(), today.getMonth(), today.getDate()+7
         document.body.appendChild(css);
     };
 
-/*
-|--------------------------------------------------------------------------
-	overly
-|--------------------------------------------------------------------------
-*/
-	function openAboutStyle() {
-		$( "#Main" ).addClass( "slide-left" );
-		$( "#About" ).addClass( "show" );
-	}
-	function closeAboutStyle() {
-		$( "#About" ).removeClass( "show" );
-		$( "#Main" ).removeClass( "slide-left" );
-	}
-	function openServicesStyle() {
-		$( "#Main" ).addClass( "slide-dowun" );
-		$( "#Services" ).addClass( "show" );
-	}
-	function closeServicesStyle() {
-		$( "#Services" ).removeClass( "show" );
-		$( "#Main" ).removeClass( "slide-dowun" );
-	}	
-	function openSubscribeStyle() {
-		$( "#Main" ).addClass( "slide-right" );
-		$( "#Subscribe" ).addClass( "show" );
-	}
-	function closeSubscribeStyle() {
-		$( "#Subscribe" ).removeClass( "show" );
-		$( "#Main" ).removeClass( "slide-right" );
-	}
-	function openContactStyle() {
-		$( "#Main" ).addClass( "slide-up" );
-		$( "#myContact" ).addClass( "show" );
-	}
-	function closeContactStyle() {
-		$( "#myContact" ).removeClass( "show" );
-		$( "#Main" ).removeClass( "slide-up" );
-	}
 
 /*
 |--------------------------------------------------------------------------
