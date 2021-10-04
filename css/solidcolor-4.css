@@ -180,7 +180,7 @@ p {
 	transform: translateX(0);	
 }
 .coming-soon-text h1 {
-    color: #fd5308;
+    color:rgb(0, 123, 255);
     font-size: 48px;
     font-weight: bold;
     margin: 0 0 30px;
