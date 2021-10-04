@@ -133,7 +133,7 @@ p {
 
 /* Typewriter */
 .coming-soon-text h1.type-animate a.typewrite{
-	color:lightblue;
+	color:rgb(0, 123, 255);
 	font-size: 48px;
 }
 
