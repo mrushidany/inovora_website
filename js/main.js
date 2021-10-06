@@ -11,7 +11,7 @@ document.addEventListener("touchstart", function() {},false);
 	CountUp
 |--------------------------------------------------------------------------
 */
-var today = new Date('2021-10-03');
+var today = new Date("2021-10-03");
 var nextweek = new Date(today.getFullYear(), today.getMonth(), today.getDate()+14);
 	$('#defaultCountdown').countdown({until: nextweek});
 	$('#year').text(today.getFullYear());
