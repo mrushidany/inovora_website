@@ -45,7 +45,7 @@
 					<!-- countdown Box end -->
 									
 					<div class="social-holder" style="margin-top: 1px;">		
-							<img src="inovora_logo.png" style="width: ; height: ;" alt="Inovora Tanzania, Limted">	
+							<img src="inovora_logo.png" alt="Inovora Tanzania, Limted">	
 					</div>
 					<!-- End Social media -->
 				</div><!-- End container -->
