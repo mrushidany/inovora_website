@@ -10,7 +10,7 @@
 	<meta name="description" content="Add your website description here">
 	<meta name="keywords" content="Add your website keywords here">
 	<!-- set your website favicon icon -->
-	<link href="favicon.ico" rel="icon">
+	<link type="image/png" href="inovora_logo.png" rel="icon">
 	
 	<!-- Bootstrap Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -44,7 +44,9 @@
 					</div>
 					<!-- countdown Box end -->
 									
-					
+					<div class="social-holder" style="margin-top: 1px;">		
+							<img src="inovora_logo.png" style="width: ; height: ;" alt="Inovora Tanzania, Limted">	
+					</div>
 					<!-- End Social media -->
 				</div><!-- End container -->
 			</div>
@@ -76,7 +78,7 @@
 	  ga('send', 'pageview');
 
 	</script>
-	
+
 	
 </body>
 </html>
